@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto</title>
+        <meta name="description" content="Eskolástica, contactanos">
+        <meta name="author" content="Jorge Blas Espejo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css" media="screen">
+        <!-- [if lt IE 9]<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![end if]-->
+    </head> 
+    <body>
+        <div class="wrapper"> <!--diseño CSS para toda la página en BODY-->
+        <header class="page-header" role="banner"> <!--cabecera con formato CLASS para HEADER incorporado-->            
+            <nav role="menubar"><img id="logo" src="images/logo.png" alt="logo"> <!--navegación-->
+                <ul> <!--lista de enlaces de la cabecera-->
+                    <li><a href="index.html" title="inicio">inicio</a></li>
+                    <li><a href="#" title="quienes somos">quienes somos</a></li>
+                    <li><a href="#" title="nuestros cursos">nuestros cursos</a></li>
+                    <li><a href="#" title="eventos">eventos</a></li>
+                    <li><a href="#" title="método eskolastica">método eskolastika</a></li>
+                    <li><a href="#" title="la eskuela">la eskuela</a></li>
+                </ul>
+                <button class="bt-acceso">log in</button> <!--botón de log in-->
+            </nav>
+        </header> 
+        </div>
+        <article class="page-jumbo-contact"> <!--texto de entrada en la imagen principal de home-->
+        </article>
+        <main> <!--formulario de contacto-->
+            <div class="row" >
+                <div class="column">
+                    <h1>Contacta con nosotros</h1>
+                    <h2>Haznos llegar tu consulta</h2>
+                    <h3>Rellena el formulario.</h3> 
+                    <form action="action.php" method="post" class="inframe column">
+                        <label for="fname">Nombre:*</label><input type="text" id="fname" name="fname" autocomplete="on" required class="input">
+                        <label for="sname">Apellidos:*</label>
+                        <input type="text" id="sname" name="sname"  autocomplete="on" required class="input">
+                        <label for="email">Dirección de correo electrónico:*</label>
+                        <input type="email" id="email" name="email"  autocomplete="on" required>
+                        <label for="category">¿Sobre qué nos quieres consultar?</label>
+                        <select name="category" id="category" size="2" multiple class="select">
+                            <option value="selection">Selecciona una opción</option>
+                            <option value="cursos">Cursos</option>
+                            <option value="precios">Precios</option>
+                            <option value="modosdepago">Modos de pago</option>
+                            <option value="eventos">Eventos</option>
+                            <option value="sugerencias">Sugerencias</option>
+                            <option value="cursos">Cursos</option>
+                        <select>
+                        <label for="met">¿Cómo nos has conocido?</label>
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Google">
+                            <option value="Instagram">
+                            <option value="Twitter">
+                            <option value="Facebook">
+                            <option value="Un conocido que ya es alumno">
+                            </datalist>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" id="message" cols="15" rows="6" class="textarea">Te escuchamos</textarea>
+                        <input type="file" id="file" name="subidadearchivo" accept="file/doc, .docs, .pdf">
+                        <input type="submit" value="ENVIAR">
+                    </form>
+                </div>
+                <div class="column">
+                    <h2>¿Dónde estamos?</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.0485332137955!2d-3.692311485464857!3d40.42992421276243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422893b5250d47%3A0xa7bb6e05de7ee8ba!2sC.%20de%20Zurbar%C3%A1n%2C%20Madrid!5e0!3m2!1sen!2ses!4v1674547274381!5m2!1sen!2ses" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+        <aside class="page-aside" role="feed">
+            <div class="page-aside-container">
+            <h2>PREGUNTAS FRECUNTES SOBRE CURSOS</h2>
+                    <h4>¿Cuánto cuestan los cursos de Eskolastika?</h4>
+                    <h4>¿Escojo modalidad online o presencial?</h4>
+                    <h4>¿Hay alguna titulación oficial?</h4>
+            <h2>Opiniones de nuestros estudiantes</a></h2>
+            </div>
+        </aside> <!-- tipos de cursos por temáticas, edades, etc.-->
+        <footer class="page-footer center" >
+            <div class="page-footer-container">
+                <small><a href="politica-privacidad.html">Política de privacidad </a></small> 
+                <p><a href="politica-redes-sociales.html">Política de redes sociales</a></p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <p><a href="blog-eskolastika">Blog de Eskolastika</a></p>
+                <p><a href="/contacto.html">Contacta con nosotros</a></p>
+                <p><a href="cveskolastika@eskolastica.es">Trabaja con nosotros</a></p>
+            </div>
+        </footer> 
+    </body>
+</html>
